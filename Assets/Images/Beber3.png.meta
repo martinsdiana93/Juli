@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Beber3_0: 3050640239333279142
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

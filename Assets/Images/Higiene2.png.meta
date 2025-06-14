@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Higiene2_0: 5230084344047012831
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

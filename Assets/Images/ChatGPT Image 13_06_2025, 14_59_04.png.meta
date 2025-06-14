@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5a83a9ca662ef794da257538ea2c712f
+guid: 0778f1870c6ffec44ac5d2e6c9a28b2c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7199750204150756546
-    second: casa de banho_0
+      213: 5813848911888544925
+    second: ChatGPT Image 13_06_2025, 14_59_04_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: casa de banho_0
+      name: ChatGPT Image 13_06_2025, 14_59_04_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 83
+        y: 71
+        width: 838
+        height: 914
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3b4c02d559551c90800000000000000
-      internalID: -7199750204150756546
+      spriteID: d9478e248c0fea050800000000000000
+      internalID: 5813848911888544925
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      casa de banho_0: -7199750204150756546
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

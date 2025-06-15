@@ -6,7 +6,14 @@ public class Copo : MonoBehaviour
     public GameObject copoAbertoComMirtilo;
     public GameObject copoAbertoVazio;
 
+    public JogoCoposController controlador = null;
+
     public bool temMirtilo = false;
+
+    public void ClickCup()
+    {
+        controlador.JogadorEscolheu(this);
+    }
 
     public void Revelar()
     {
@@ -18,11 +25,16 @@ public class Copo : MonoBehaviour
             copoAbertoVazio.SetActive(true); // aqui tenho que rever o script 
     }
 
-    public void Resetar()
+    public void Esconder()
     {
         copoFechado.SetActive(true);
         copoAbertoComMirtilo.SetActive(false);
         copoAbertoVazio.SetActive(false);
+    }
+
+    public void Resetar()
+    {
+        Esconder();
         temMirtilo = false;
     }
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dd7e49a977c235646b22fe316c8b189a
+guid: 0f7595f8df83451428fd7b52bf7159e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1957090251758950485
-    second: BotLaranja_nivel3_0
+      213: 7681150895687692026
+    second: cartao banana_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotLaranja_nivel3_0
+      name: cartao banana_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 648
-        height: 301
+        width: 999
+        height: 998
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba7278ef8c407d4e0800000000000000
-      internalID: -1957090251758950485
+      spriteID: afe63ab0b0ee89a60800000000000000
+      internalID: 7681150895687692026
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BotLaranja_nivel3_0: -1957090251758950485
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

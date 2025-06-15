@@ -6,43 +6,131 @@ public class JogoCoposController : MonoBehaviour
 {
     public List<Copo> copos; // Atribuir no Inspector (esquerda, meio, direita)
     public int trocasPorNivel = 3; // muda conforme nível
-    private Copo copoComMirtilo;
-    private bool podeClicar = false;
+    public int trocasActuias = 0;
+    public Copo copoComMirtilo;
+    public bool podeClicar = false;
+    public float tradeSpeed = 1.0f;
+    public int nivelActual = 0;
+    public bool revealOthers = false;
+    public bool revealOthersDone = false;
+    public float tickReveal = 0f;
+    public Copo revealedCup = null;
 
+    public bool tradeStart = false;
+    public float tickStart = 0f;
+
+    public GameObject tradeCupA = null;
+    public Vector3 tradeCupA_Start = Vector3.zero;
+    public Vector3 tradeCupA_End = Vector3.zero;
+    public GameObject tradeCupB = null;
+    public Vector3 tradeCupB_Start = Vector3.zero;
+    public Vector3 tradeCupB_End = Vector3.zero;
+    public bool tradeCups = false;
+    public float tickTrade = 0f;
+
+    public void IniciarNivel()
+    {
+        IniciarNivel(nivelActual);
+    }
     public void IniciarNivel(int nivel)
     {
-        trocasPorNivel = nivel switch
+        nivelActual = nivel;
+        trocasActuias = 0;
+        switch (nivel)
         {
-            1 => 3,
-            2 => 5,
-            3 => 9,
-            _ => 3
-        };
-
-        copoComMirtilo = copos[Random.Range(0, copos.Count)];
-        StartCoroutine(EmbaralharCopos());
-    }
-
-    IEnumerator EmbaralharCopos()
-    {
-        podeClicar = false;
-
-        for (int i = 0; i < trocasPorNivel; i++)
-        {
-            int a = Random.Range(0, copos.Count);
-            int b = Random.Range(0, copos.Count);
-
-            while (a == b) b = Random.Range(0, copos.Count);
-
-            // Troca posições
-            Vector3 posA = copos[a].transform.position;
-            copos[a].transform.position = copos[b].transform.position;
-            copos[b].transform.position = posA;
-
-            yield return new WaitForSeconds(0.5f); // tempo entre trocas aqui preciso de adicionar 
+            case 1:
+                trocasPorNivel = 3;
+                tradeSpeed = 0.8f;
+                break;
+            case 2:
+                trocasPorNivel = 5;
+                tradeSpeed = 0.65f;
+                break;
+            case 3:
+                trocasPorNivel = 9;
+                tradeSpeed = 0.5f;
+                break;
         }
 
-        podeClicar = true;
+        copoComMirtilo = copos[Random.Range(0, copos.Count)];
+        copoComMirtilo.temMirtilo = true;
+        foreach (Copo cup in copos)
+        {
+            cup.Revelar();
+        }
+        tradeStart = true;
+        tickStart = 0f;
+    }
+
+    public void Update()
+    {
+        if (tradeStart)
+        {
+            tickStart += Time.deltaTime;
+            if (tickStart >= 1f)
+            {
+                foreach (Copo cup in copos)
+                {
+                    cup.Esconder();
+                }
+                tradeStart = false;
+                Pick2Cups();
+            }
+        }
+        if (tradeCups)
+        {
+            tickTrade += Time.deltaTime / tradeSpeed;
+            tradeCupA.transform.position = Vector3.Lerp(tradeCupA_Start, tradeCupA_End, tickTrade);
+            tradeCupB.transform.position = Vector3.Lerp(tradeCupB_Start, tradeCupB_End, tickTrade);
+            if(tickTrade >= 1f)
+            {
+                trocasActuias++;
+                tradeCups = false;
+                if (trocasActuias < trocasPorNivel) { Pick2Cups(); } else { podeClicar = true; }
+            }
+        }
+        if (revealOthers)
+        {
+            tickReveal += Time.deltaTime;
+            if (tickReveal >= 0.5f && !revealOthersDone)
+            {
+                revealOthersDone = true;
+                foreach (Copo cup in copos)
+                {
+                    if (cup != revealedCup)
+                    {
+                        cup.Revelar();
+                    }
+                }
+            }
+            if (tickReveal >= 1f)
+            {
+                revealOthers = false;
+                revealOthersDone = false;
+                tickReveal = 0f;
+                foreach (Copo cup in copos)
+                {
+                    cup.Resetar();
+                }
+                IniciarNivel();
+            }
+        }
+    }
+
+    public void Pick2Cups()
+    {
+        int a = Random.Range(0, copos.Count);
+        int b = Random.Range(0, copos.Count);
+
+        while (a == b) b = Random.Range(0, copos.Count);
+        tradeCupA = copos[a].gameObject;
+        tradeCupB = copos[b].gameObject;
+        tradeCupA_Start = tradeCupA.transform.position;
+        tradeCupA_End = tradeCupB.transform.position;
+        tradeCupB_Start = tradeCupB.transform.position;
+        tradeCupB_End = tradeCupA.transform.position;
+        tickTrade = 0f;
+        tradeCups = true;
     }
 
     public void JogadorEscolheu(Copo escolhido)
@@ -50,15 +138,18 @@ public class JogoCoposController : MonoBehaviour
         if (!podeClicar) return;
 
         podeClicar = false;
-
-        if (escolhido == copoComMirtilo)
+        escolhido.Revelar();
+        if (copoComMirtilo == escolhido)
         {
-            escolhido.MostrarComMirtilo();
-        }
-        else
+            // Ganhaste!
+            revealOthers = true;
+            revealedCup = escolhido;
+        } else
         {
-            escolhido.MostrarVazio();
-            copoComMirtilo.MostrarComMirtilo(); // mostra o certo também
+            // Perdeste
+            revealOthers = true;
+            revealedCup = escolhido;
         }
+           
     }
 }

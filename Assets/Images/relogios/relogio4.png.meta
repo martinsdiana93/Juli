@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: dd7e49a977c235646b22fe316c8b189a
+guid: a4e57d5cacf78334a9c91591babe1c51
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1957090251758950485
-    second: BotLaranja_nivel3_0
+      213: 8266516538455752450
+    second: relogio4_0
+  - first:
+      213: 894945697633172723
+    second: relogio4_1
+  - first:
+      213: -8912922291223377017
+    second: relogio4_2
+  - first:
+      213: 1749962819106198285
+    second: relogio4_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BotLaranja_nivel3_0
+      name: relogio4_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 3
         y: 0
-        width: 648
-        height: 301
+        width: 1019
+        height: 1019
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +137,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba7278ef8c407d4e0800000000000000
-      internalID: -1957090251758950485
+      spriteID: 20ffb8c6ef098b270800000000000000
+      internalID: 8266516538455752450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio4_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 492
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc70b0de5c7b6c00800000000000000
+      internalID: 894945697633172723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio4_2
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 498
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b48f81660fe4480800000000000000
+      internalID: -8912922291223377017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio4_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 482
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0357fa89ed194810800000000000000
+      internalID: 1749962819106198285
       vertices: []
       indices: 
       edges: []
@@ -147,8 +222,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      BotLaranja_nivel3_0: -1957090251758950485
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

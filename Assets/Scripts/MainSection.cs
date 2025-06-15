@@ -91,7 +91,7 @@ public class MainHUD : MonoBehaviour
                 buttons.SetActive(false);
                 screen_shower.gameObject.SetActive(false);
                 screen_eat.gameObject.SetActive(true);
-                screen_eat.pick_fact();
+                screen_eat.pick_clock_options();
                 screen_drink.gameObject.SetActive(false);
                 screen_sleep.gameObject.SetActive(false);
                 break;
@@ -169,7 +169,8 @@ public class MainHUD : MonoBehaviour
 
         // Happiness
         RectTransform rt = happiness_bar.GetComponent<RectTransform>();
-        rt.sizeDelta = new Vector2(mc.happiness*5, rt.sizeDelta.y);
+        int truncate_value = Mathf.CeilToInt(mc.happiness / 10)*10;
+        rt.sizeDelta = new Vector2(truncate_value * 5, rt.sizeDelta.y);
 
         if (mc.happiness <= 60){
             if (mc.happiness <= 30){

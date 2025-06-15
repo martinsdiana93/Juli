@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 7c781e486cb9c5b459e92418f9419c7b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7130016267876348812
+    second: jogo dos pares_0
+  - first:
+      213: 1650338247652408309
+    second: jogo dos pares_1
+  - first:
+      213: 1087985419238599857
+    second: jogo dos pares_2
+  - first:
+      213: -6595775556826585605
+    second: jogo dos pares_3
+  - first:
+      213: -8774889049280499112
+    second: jogo dos pares_4
+  - first:
+      213: -8298188441076466334
+    second: jogo dos pares_5
+  - first:
+      213: -3458857621210455896
+    second: jogo dos pares_6
+  - first:
+      213: -4870621238662235537
+    second: jogo dos pares_7
+  - first:
+      213: 8703302193770938058
+    second: jogo dos pares_8
+  - first:
+      213: -3092104110280219075
+    second: jogo dos pares_9
+  - first:
+      213: 2156362539035315787
+    second: jogo dos pares_10
+  - first:
+      213: -5213670598846235512
+    second: jogo dos pares_11
+  - first:
+      213: -8152715975680227878
+    second: jogo dos pares_12
+  - first:
+      213: -835102342593630941
+    second: jogo dos pares_13
+  - first:
+      213: -6849773096024502506
+    second: jogo dos pares_14
+  - first:
+      213: -8776374526695208128
+    second: jogo dos pares_15
+  - first:
+      213: -9008351223063226821
+    second: jogo dos pares_16
+  - first:
+      213: -8322537880454093743
+    second: jogo dos pares_17
+  - first:
+      213: 3801846928166336444
+    second: jogo dos pares_18
+  - first:
+      213: 6202789696917280529
+    second: jogo dos pares_19
+  - first:
+      213: 3237246621068708559
+    second: jogo dos pares_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: jogo dos pares_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 141
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47c49761bf71d0d90800000000000000
+      internalID: -7130016267876348812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 8
+        width: 183
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbff8274ed27e610800000000000000
+      internalID: 1650338247652408309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_2
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 2
+        width: 186
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bc658279fc491f00800000000000000
+      internalID: 1087985419238599857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_3
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 8
+        width: 181
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5a525b3191774a0800000000000000
+      internalID: -6595775556826585605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_4
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 2
+        width: 174
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 852bb2aa6e4593680800000000000000
+      internalID: -8774889049280499112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 7
+        width: 173
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d726a1499e6dc80800000000000000
+      internalID: -8298188441076466334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_6
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 9
+        width: 142
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a0291fb15bafffc0800000000000000
+      internalID: -3458857621210455896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_7
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 9
+        width: 142
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a70120ac3186cb0800000000000000
+      internalID: -4870621238662235537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_8
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 199
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace3890bb3758c870800000000000000
+      internalID: 8703302193770938058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_9
+      rect:
+        serializedVersion: 2
+        x: 1477
+        y: 198
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d36e832c1b3a615d0800000000000000
+      internalID: -3092104110280219075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_10
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 15
+        width: 229
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ec82aed40fced10800000000000000
+      internalID: 2156362539035315787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_11
+      rect:
+        serializedVersion: 2
+        x: 1707
+        y: 10
+        width: 158
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c3fdba63255a7b0800000000000000
+      internalID: -5213670598846235512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_12
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 10
+        width: 150
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad58dead30cbbde80800000000000000
+      internalID: -8152715975680227878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_13
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 12
+        width: 149
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d2c9e08de1964f0800000000000000
+      internalID: -835102342593630941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_14
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 133
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61f8e6b29a7b0f0a0800000000000000
+      internalID: -6849773096024502506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_15
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 122
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b8b800edd043680800000000000000
+      internalID: -8776374526695208128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_16
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 115
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b365c597a48ebf280800000000000000
+      internalID: -9008351223063226821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_17
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 122
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1542dc574e7608c80800000000000000
+      internalID: -8322537880454093743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_18
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 115
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7b3cb53afd2c430800000000000000
+      internalID: 3801846928166336444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_19
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 121
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11715359d5cb41650800000000000000
+      internalID: 6202789696917280529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: jogo dos pares_20
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 114
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fca422376a20dec20800000000000000
+      internalID: 3237246621068708559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      jogo dos pares_0: -7130016267876348812
+      jogo dos pares_1: 1650338247652408309
+      jogo dos pares_10: 2156362539035315787
+      jogo dos pares_11: -5213670598846235512
+      jogo dos pares_12: -8152715975680227878
+      jogo dos pares_13: -835102342593630941
+      jogo dos pares_14: -6849773096024502506
+      jogo dos pares_15: -8776374526695208128
+      jogo dos pares_16: -9008351223063226821
+      jogo dos pares_17: -8322537880454093743
+      jogo dos pares_18: 3801846928166336444
+      jogo dos pares_19: 6202789696917280529
+      jogo dos pares_2: 1087985419238599857
+      jogo dos pares_20: 3237246621068708559
+      jogo dos pares_3: -6595775556826585605
+      jogo dos pares_4: -8774889049280499112
+      jogo dos pares_5: -8298188441076466334
+      jogo dos pares_6: -3458857621210455896
+      jogo dos pares_7: -4870621238662235537
+      jogo dos pares_8: 8703302193770938058
+      jogo dos pares_9: -3092104110280219075
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

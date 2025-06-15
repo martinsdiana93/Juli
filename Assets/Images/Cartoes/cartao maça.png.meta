@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      "cartao ma\xE7a_0": -9129156787341463768
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

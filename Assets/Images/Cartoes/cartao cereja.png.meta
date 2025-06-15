@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao cereja_0: -3160328193135556093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

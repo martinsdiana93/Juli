@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 997f8a0521469e54b9b17ec3d1e3a142
+guid: 029591cb7aa0b134796e97d58b16c54d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4353350128203150485
-    second: cartao beterraba_0
+      213: -1675278280102843048
+    second: Game frame_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cartao beterraba_0
+      name: Game frame_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 999
-        height: 999
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 594337660e43a6c30800000000000000
-      internalID: 4353350128203150485
+      spriteID: 85dea8eb74730c8e0800000000000000
+      internalID: -1675278280102843048
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      cartao beterraba_0: 4353350128203150485
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0778f1870c6ffec44ac5d2e6c9a28b2c
+guid: dd7e49a977c235646b22fe316c8b189a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5813848911888544925
-    second: ChatGPT Image 13_06_2025, 14_59_04_0
+      213: -1957090251758950485
+    second: BotLaranja_nivel3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image 13_06_2025, 14_59_04_0
+      name: BotLaranja_nivel3_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 71
-        width: 838
-        height: 914
+        x: 0
+        y: 0
+        width: 648
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9478e248c0fea050800000000000000
-      internalID: 5813848911888544925
+      spriteID: ba7278ef8c407d4e0800000000000000
+      internalID: -1957090251758950485
       vertices: []
       indices: 
       edges: []

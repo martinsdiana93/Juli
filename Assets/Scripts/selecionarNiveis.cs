@@ -14,7 +14,7 @@ public class SelecionarNiveis : MonoBehaviour
         jogoBackground.SetActive(true);
 
         // Iniciar lógica do jogo (opcional)
-         FindObjectOfType<JogoCoposController>()?.IniciarNivel(nivelSelecionado);
+        FindFirstObjectByType<JogoCoposController>()?.IniciarNivel(nivelSelecionado);
     }
 }
 

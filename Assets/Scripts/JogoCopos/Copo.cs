@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Copo : MonoBehaviour
@@ -19,10 +21,16 @@ public class Copo : MonoBehaviour
     {
         copoFechado.SetActive(false);
 
-        if (temMirtilo)
+        if (temMirtilo) {
+            
             copoAbertoComMirtilo.SetActive(true);
-        else
-            copoAbertoVazio.SetActive(true); // aqui tenho que rever o script 
+        }
+
+        else{
+            
+            copoAbertoVazio.SetActive(true);
+        }
+            
     }
 
     public void Esconder()

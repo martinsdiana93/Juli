@@ -6,7 +6,7 @@ public class JogoCoposController : MonoBehaviour
 {
     public List<Copo> copos; // Atribuir no Inspector (esquerda, meio, direita)
     public int trocasPorNivel = 3; // muda conforme nível
-    public int trocasActuias = 0;
+    public int trocasActuais = 0;
     public Copo copoComMirtilo;
     public bool podeClicar = false;
     public float tradeSpeed = 1.0f;
@@ -28,6 +28,10 @@ public class JogoCoposController : MonoBehaviour
     public bool tradeCups = false;
     public float tickTrade = 0f;
 
+    public GameObject popUpErrado;
+    public GameObject popUpCerto;
+    public FinalSceneManager sceneManager;
+
     public void IniciarNivel()
     {
         IniciarNivel(nivelActual);
@@ -35,7 +39,7 @@ public class JogoCoposController : MonoBehaviour
     public void IniciarNivel(int nivel)
     {
         nivelActual = nivel;
-        trocasActuias = 0;
+        trocasActuais = 0;
         switch (nivel)
         {
             case 1:
@@ -60,6 +64,7 @@ public class JogoCoposController : MonoBehaviour
         }
         tradeStart = true;
         tickStart = 0f;
+        tickReveal = 0f;
     }
 
     public void Update()
@@ -67,12 +72,9 @@ public class JogoCoposController : MonoBehaviour
         if (tradeStart)
         {
             tickStart += Time.deltaTime;
-            if (tickStart >= 1f)
+            if (tickStart >= 2f)
             {
-                foreach (Copo cup in copos)
-                {
-                    cup.Esconder();
-                }
+                foreach (Copo cup in copos) { cup.Esconder(); }
                 tradeStart = false;
                 Pick2Cups();
             }
@@ -84,9 +86,9 @@ public class JogoCoposController : MonoBehaviour
             tradeCupB.transform.position = Vector3.Lerp(tradeCupB_Start, tradeCupB_End, tickTrade);
             if(tickTrade >= 1f)
             {
-                trocasActuias++;
+                trocasActuais++;
                 tradeCups = false;
-                if (trocasActuias < trocasPorNivel) { Pick2Cups(); } else { podeClicar = true; }
+                if (trocasActuais < trocasPorNivel) { Pick2Cups(); } else { podeClicar = true; }
             }
         }
         if (revealOthers)
@@ -105,14 +107,21 @@ public class JogoCoposController : MonoBehaviour
             }
             if (tickReveal >= 1f)
             {
+                popUpCerto.SetActive(Contar_Pontos.lastCorrect);
+                popUpErrado.SetActive(Contar_Pontos.lastWrong);
+            }
+            if (tickReveal > 2f)
+            {
                 revealOthers = false;
                 revealOthersDone = false;
-                tickReveal = 0f;
+                popUpCerto.SetActive(false);
+                popUpErrado.SetActive(false);
                 foreach (Copo cup in copos)
                 {
                     cup.Resetar();
                 }
-                IniciarNivel();
+                if (Contar_Pontos.CheckGameEnd()) sceneManager.EndGame();
+                else IniciarNivel();
             }
         }
     }
@@ -130,6 +139,7 @@ public class JogoCoposController : MonoBehaviour
         tradeCupB_Start = tradeCupB.transform.position;
         tradeCupB_End = tradeCupA.transform.position;
         tickTrade = 0f;
+        tickStart = 0f;
         tradeCups = true;
     }
 
@@ -144,12 +154,13 @@ public class JogoCoposController : MonoBehaviour
             // Ganhaste!
             revealOthers = true;
             revealedCup = escolhido;
+            Contar_Pontos.IncrementRightAnswer();
         } else
         {
             // Perdeste
             revealOthers = true;
             revealedCup = escolhido;
+            Contar_Pontos.IncrementWrongAnswer();
         }
-           
     }
 }

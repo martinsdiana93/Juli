@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao tangerina_0: 711234209328349168
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

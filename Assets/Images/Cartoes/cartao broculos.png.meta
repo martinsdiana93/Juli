@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao broculos_0: -387797739857553214
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao cenoura_0: 8241368247346614620
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

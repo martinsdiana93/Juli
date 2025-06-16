@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao alho_0: -3634092137337175252
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

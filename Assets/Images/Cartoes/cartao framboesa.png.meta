@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cartao framboesa_0: 4312848191678448425
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

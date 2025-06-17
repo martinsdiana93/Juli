@@ -11,9 +11,13 @@ public class MainHUD : MonoBehaviour
 
     // Activity Screens
     public ActivityScreen screen_shower = null;
+    public GameObject screen_showerObject = null;
     public ActivityScreen screen_eat = null;
+    public GameObject screen_eatObject = null;
     public ActivityScreen screen_drink = null;
+    public GameObject screen_drinkObject = null;
     public ActivityScreen screen_sleep = null;
+    public GameObject screen_sleepObject = null;
 
     // Needs
     public Image hygiene = null;
@@ -72,46 +76,53 @@ public class MainHUD : MonoBehaviour
         switch(new_at){
             case ActivityType.None:
                 buttons.SetActive(true);
-                screen_shower.gameObject.SetActive(false);
-                screen_eat.gameObject.SetActive(false);
-                screen_drink.gameObject.SetActive(false);
-                screen_sleep.gameObject.SetActive(false);
+                screen_showerObject.SetActive(false);
+                screen_eatObject.SetActive(false);
+                screen_drinkObject.SetActive(false);
+                screen_sleepObject.SetActive(false);
                 break;
             case ActivityType.Shower:
                 if(hygiene_timeout > 0.0f) {return;}
                 buttons.SetActive(false);
-                screen_shower.gameObject.SetActive(true);
+                screen_showerObject.SetActive(true);
                 screen_shower.pick_fact();
-                screen_eat.gameObject.SetActive(false);
-                screen_drink.gameObject.SetActive(false);
-                screen_sleep.gameObject.SetActive(false);
+                screen_eatObject.SetActive(false);
+                screen_drinkObject.SetActive(false);
+                screen_sleepObject.SetActive(false);
                 break;
             case ActivityType.Eat:
                 if(food_timeout > 0.0f) {return;}
                 buttons.SetActive(false);
-                screen_shower.gameObject.SetActive(false);
-                screen_eat.gameObject.SetActive(true);
+                screen_showerObject.SetActive(false);
+                screen_eatObject.SetActive(true);
                 screen_eat.pick_clock_options();
-                screen_drink.gameObject.SetActive(false);
-                screen_sleep.gameObject.SetActive(false);
+                screen_drinkObject.SetActive(false);
+                screen_sleepObject.SetActive(false);
                 break;
             case ActivityType.Drink:
                 if(thirst_timeout > 0.0f) {return;}
                 buttons.SetActive(false);
-                screen_shower.gameObject.SetActive(false);
-                screen_eat.gameObject.SetActive(false);
-                screen_drink.gameObject.SetActive(true);
+                screen_showerObject.SetActive(false);
+                screen_eatObject.SetActive(false);
+                screen_drinkObject.SetActive(true);
                 screen_drink.pick_fact();
-                screen_sleep.gameObject.SetActive(false);
+                screen_sleepObject.SetActive(false);
                 break;
             case ActivityType.Sleep:
                 if(energy_timeout > 0.0f) {return;}
                 buttons.SetActive(false);
-                screen_shower.gameObject.SetActive(false);
-                screen_eat.gameObject.SetActive(false);
-                screen_drink.gameObject.SetActive(false);
-                screen_sleep.gameObject.SetActive(true);
+                screen_showerObject.SetActive(false);
+                screen_eatObject.SetActive(false);
+                screen_drinkObject.SetActive(false);
+                screen_sleepObject.SetActive(true);
                 screen_sleep.pick_fact();
+                break;
+            case ActivityType.Game:
+                buttons.SetActive(false);
+                screen_showerObject.SetActive(false);
+                screen_eatObject.SetActive(false);
+                screen_drinkObject.SetActive(false);
+                screen_sleepObject.SetActive(false);
                 break;
         }
         update_needs();
@@ -218,6 +229,7 @@ public class MainHUD : MonoBehaviour
         Shower,
         Eat,
         Drink,
-        Sleep
+        Sleep,
+        Game
     }
 }

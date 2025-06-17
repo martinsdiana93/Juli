@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 325f0ab2f7dceea4f87696475243ea6d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5392358858399978274
+    second: JogoMatematica_0
+  - first:
+      213: -6898569217712657998
+    second: JogoMatematica_1
+  - first:
+      213: -4061341664172549588
+    second: JogoMatematica_2
+  - first:
+      213: 5711836865627053219
+    second: JogoMatematica_3
+  - first:
+      213: -4041065451907101481
+    second: JogoMatematica_4
+  - first:
+      213: 5983026939570200951
+    second: JogoMatematica_5
+  - first:
+      213: -503169474126461816
+    second: JogoMatematica_6
+  - first:
+      213: -4268372597932900914
+    second: JogoMatematica_7
+  - first:
+      213: -2290103808416207639
+    second: JogoMatematica_8
+  - first:
+      213: 913619695305301374
+    second: JogoMatematica_9
+  - first:
+      213: -3296601664708430793
+    second: JogoMatematica_10
+  - first:
+      213: -1674804597892688306
+    second: JogoMatematica_11
+  - first:
+      213: -2184522160138722551
+    second: JogoMatematica_12
+  - first:
+      213: -6747427377187158466
+    second: JogoMatematica_13
+  - first:
+      213: -8311818651971205677
+    second: JogoMatematica_14
+  - first:
+      213: -6638284990910602663
+    second: JogoMatematica_15
+  - first:
+      213: -7563283713811677796
+    second: JogoMatematica_16
+  - first:
+      213: 1689771628694550366
+    second: JogoMatematica_17
+  - first:
+      213: -7423522018167973659
+    second: JogoMatematica_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JogoMatematica_0
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 767
+        width: 71
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2239c50dfc185da40800000000000000
+      internalID: 5392358858399978274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_1
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 764
+        width: 93
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9eacfb8db5340a0800000000000000
+      internalID: -6898569217712657998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 767
+        width: 86
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2a508b364733a7c0800000000000000
+      internalID: -4061341664172549588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_3
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 766
+        width: 93
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac5eaedd55844f40800000000000000
+      internalID: 5711836865627053219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_4
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 764
+        width: 80
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dc49f8c1604be7c0800000000000000
+      internalID: -4041065451907101481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_5
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 767
+        width: 65
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771aca65d4bf70350800000000000000
+      internalID: 5983026939570200951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_6
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 655
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8844fd877026409f0800000000000000
+      internalID: -503169474126461816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_7
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 657
+        width: 92
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecdb23bacb1b3c4c0800000000000000
+      internalID: -4268372597932900914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_8
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 662
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec259048bae730e0800000000000000
+      internalID: -2290103808416207639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_9
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 654
+        width: 65
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d1976b544ddac00800000000000000
+      internalID: 913619695305301374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_10
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 656
+        width: 110
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 734b719804e1042d0800000000000000
+      internalID: -3296601664708430793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_11
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 659
+        width: 89
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e465a6a7716e1c8e0800000000000000
+      internalID: -1674804597892688306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_12
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 744
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90366f06ba40fa1e0800000000000000
+      internalID: -2184522160138722551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_13
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 662
+        width: 72
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e368303cc825c52a0800000000000000
+      internalID: -6747427377187158466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_14
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 655
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d54ac359fc76ac80800000000000000
+      internalID: -8311818651971205677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_15
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 656
+        width: 74
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95267fec8f210e3a0800000000000000
+      internalID: -6638284990910602663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_16
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 657
+        width: 92
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9df1c6c881d90790800000000000000
+      internalID: -7563283713811677796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_17
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 745
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e573fdfe756437710800000000000000
+      internalID: 1689771628694550366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JogoMatematica_18
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 675
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e89ec45e0a5af890800000000000000
+      internalID: -7423522018167973659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      JogoMatematica_0: 5392358858399978274
+      JogoMatematica_1: -6898569217712657998
+      JogoMatematica_10: -3296601664708430793
+      JogoMatematica_11: -1674804597892688306
+      JogoMatematica_12: -2184522160138722551
+      JogoMatematica_13: -6747427377187158466
+      JogoMatematica_14: -8311818651971205677
+      JogoMatematica_15: -6638284990910602663
+      JogoMatematica_16: -7563283713811677796
+      JogoMatematica_17: 1689771628694550366
+      JogoMatematica_18: -7423522018167973659
+      JogoMatematica_2: -4061341664172549588
+      JogoMatematica_3: 5711836865627053219
+      JogoMatematica_4: -4041065451907101481
+      JogoMatematica_5: 5983026939570200951
+      JogoMatematica_6: -503169474126461816
+      JogoMatematica_7: -4268372597932900914
+      JogoMatematica_8: -2290103808416207639
+      JogoMatematica_9: 913619695305301374
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

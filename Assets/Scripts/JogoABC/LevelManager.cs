@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections.Generic;
 
 public class LevelManager : MonoBehaviour
@@ -8,77 +9,41 @@ public class LevelManager : MonoBehaviour
     public Dificuldade dificuldadeAtual;
     public WordGameDif wordGameDif; // Referência ao script que tem as listas de jogos
 
-    private int indiceAtual = 0;
-
     public GameObject botaoAvancar; // Botão "Avançar nível", que será desativado no fim
-
-    public void IniciarJogo(Dificuldade dificuldade)
-    {
-        dificuldadeAtual = dificuldade;
-        indiceAtual = 0;
-        AtivarNivelAtual();
-    }
 
     public void AvancarNivel()
     {
-        indiceAtual++;
-
         // Verifica se já chegou ao fim
-        if (indiceAtual >= ObterListaAtual().Count)
+        if (wordGameDif.currentDifficulty >= 3)
         {
+            UpdateButtons();
             Debug.Log("Último nível atingido.");
-            botaoAvancar.SetActive(false); // Esconde o botão
             return;
         }
-
-        AtivarNivelAtual();
+        DesactivarJogos();
+        wordGameDif.ChooseDifficulty(wordGameDif.currentDifficulty + 1);
     }
 
-    private void AtivarNivelAtual()
+    public void UpdateButtons()
     {
-        List<WordGame> lista = ObterListaAtual();
+        Debug.Log("Update Button!");
+        botaoAvancar.GetComponent<Button>().interactable = (wordGameDif.currentDifficulty < 3); // Esconde o botão
+    }
 
+    private void DesactivarJogos()
+    {
         // Desativa todos os jogos
-        foreach (WordGame jogo in lista)
+        foreach (WordGame jogo in wordGameDif.easygames)
             jogo.gameObject.SetActive(false);
-
-        WordGame nivelAtual = lista[indiceAtual];
-        nivelAtual.gameObject.SetActive(true);
-        nivelAtual.StartGame();
-
-        Debug.Log("Dificuldade atual: " + dificuldadeAtual + " | Nível: " + indiceAtual);
-        botaoAvancar.SetActive(indiceAtual < lista.Count - 1); // Esconde se for o último
-    }
-
-    private List<WordGame> ObterListaAtual()
-    {
-        switch (dificuldadeAtual)
-        {
-            case Dificuldade.Facil: return wordGameDif.easygames;
-            case Dificuldade.Medio: return wordGameDif.mediumgames;
-            case Dificuldade.Dificil: return wordGameDif.hardgames;
-            default: return new List<WordGame>();
-        }
+        foreach (WordGame jogo in wordGameDif.mediumgames)
+            jogo.gameObject.SetActive(false);
+        foreach (WordGame jogo in wordGameDif.hardgames)
+            jogo.gameObject.SetActive(false);
     }
 
     public void RepetirNivelAleatorio()
     {
-        // Obtém lista atual da dificuldade
-        List<WordGame> lista = ObterListaAtual();
-
-        // Desativa todos os jogos
-        foreach (WordGame jogo in lista)
-        {
-            jogo.gameObject.SetActive(false);
-        }
-
-        // Escolhe outro jogo aleatório
-        int novoIndice = Random.Range(0, lista.Count);
-        indiceAtual = novoIndice;
-
-        // Ativa e inicia o novo jogo
-        lista[indiceAtual].gameObject.SetActive(true);
-        lista[indiceAtual].StartGame();
-
+        DesactivarJogos();
+        wordGameDif.ChooseDifficulty(wordGameDif.currentDifficulty);
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 public class WordGameDif : MonoBehaviour
 {
+    public int currentDifficulty = 0;
 	public List<WordGame> easygames=new List<WordGame>();
     public List<WordGame> mediumgames = new List<WordGame>();
     public List<WordGame> hardgames = new List<WordGame>();
@@ -10,6 +11,7 @@ public class WordGameDif : MonoBehaviour
     public void ChooseDifficulty(int difficulty)
    {
         int choice = 0;
+        currentDifficulty = difficulty;
         switch (difficulty)
         {
             case 1:

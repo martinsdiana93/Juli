@@ -12,10 +12,7 @@ public class Jogo_Pares : MonoBehaviour
 
     public GameObject win_screen = null;
 
-    private void Start()
-    {
-        update_pieces();
-    }
+    
 
     public void PickPiece(Piece selected_piece)
     {
@@ -59,5 +56,24 @@ public class Jogo_Pares : MonoBehaviour
         {
             win_screen.SetActive(true);
         }
+    }
+
+    public void ReplayNivel()
+    {
+        foreach (Piece piece in pieces_list)
+    {
+        piece.gameObject.SetActive(true);
+        if (piece.piece_highlighted != null)
+            piece.piece_highlighted.SetActive(false);
+        if (piece.piece_disabled != null)
+            piece.piece_disabled.SetActive(false);
+    }
+
+    myPiece = null;
+
+    if (win_screen != null)
+        win_screen.SetActive(false);
+
+    update_pieces();
     }
 }

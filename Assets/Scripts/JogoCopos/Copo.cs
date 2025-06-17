@@ -8,9 +8,16 @@ public class Copo : MonoBehaviour
     public GameObject copoAbertoComMirtilo;
     public GameObject copoAbertoVazio;
 
+    private Vector3 posicaoInicial;
+
     public JogoCoposController controlador = null;
 
     public bool temMirtilo = false;
+
+    void Start()
+    {
+        posicaoInicial = transform.position;
+    }
 
     public void ClickCup()
     {
@@ -44,6 +51,11 @@ public class Copo : MonoBehaviour
     {
         Esconder();
         temMirtilo = false;
+    }
+
+    public void ResetarPosicao()
+    {
+        transform.position = posicaoInicial;
     }
 
     public void MostrarComMirtilo()

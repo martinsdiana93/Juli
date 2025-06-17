@@ -163,4 +163,28 @@ public class JogoCoposController : MonoBehaviour
             Contar_Pontos.IncrementWrongAnswer();
         }
     }
+
+    public void ResetarCenas()
+    {
+    foreach (Copo cup in copos)
+    {
+        cup.Resetar();
+        cup.ResetarPosicao();
+    }
+    copoComMirtilo = null;
+    podeClicar = false;
+    tradeStart = false;
+    tradeCups = false;
+    revealOthers = false;
+    revealOthersDone = false;
+    tickReveal = 0f;
+    tickStart = 0f;
+    tickTrade = 0f;
+
+    popUpCerto.SetActive(false);
+    popUpErrado.SetActive(false);
+
+    Contar_Pontos.lastCorrect = false;
+    Contar_Pontos.lastWrong = false;
+    }
 }

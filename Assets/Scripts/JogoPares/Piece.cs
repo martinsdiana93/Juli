@@ -28,11 +28,5 @@ public class Piece : MonoBehaviour
             if (overlapper.activeSelf) { return true; }
         }
         return false;
-    }
-
-    
-    
-    
-    
-  
+    }  
 }

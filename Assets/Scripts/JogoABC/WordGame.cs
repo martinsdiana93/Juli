@@ -8,14 +8,26 @@ public class WordGame : MonoBehaviour
     public string FinalWord = "";
     public int wordStep=0;
 
+    public GameObject PopUpFinal;
+
     public bool game_finished = false;
     public float end_delay = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartGame()
     {
         wordStep = 0;
         game_finished = false;
         end_delay = 0f;
+
+        if (PopUpFinal == null)
+{
+        Debug.LogWarning("PopUpFinal não foi atribuído!");
+}
+
+        if (PopUpFinal != null && PopUpFinal.activeSelf)
+            PopUpFinal.SetActive(false); // Garante que está escondido no início
+
         foreach (GameObject letter in SolutionWord)
         {
             letter.SetActive(false);
@@ -29,6 +41,8 @@ public class WordGame : MonoBehaviour
 
     public void PickLetter(LetterButton ButtonChosen)
     {
+        if (game_finished) return;
+
         if (ButtonChosen.letter == FinalWord[wordStep])
         {
             SolutionWord[wordStep].SetActive(true);
@@ -38,19 +52,19 @@ public class WordGame : MonoBehaviour
 
         if(wordStep >=FinalWord.Length)
         {
+            Debug.Log("Fim do jogo — a mostrar popup");
             //Ganhaste o jogo
+            if (PopUpFinal != null)
+                PopUpFinal.SetActive(true); // Mostra o popup final
             game_finished = true;
         }
     }
 
-    void Update()
+    public void RepetirNivel()
     {
-        if (game_finished){
-            end_delay += Time.deltaTime;
-            if(end_delay >= 2.0)
-            {
-                gameObject.SetActive(false);
-            }
-        }
+        if (PopUpFinal != null)
+            PopUpFinal.SetActive(false); // Esconde o popup final, se estiver visível
+
+        StartGame(); // Recomeça o jogo com os mesmos dados
     }
 }

@@ -9,7 +9,5 @@ public class LetterButton : MonoBehaviour
     public void onclick()
     {
         wordGame.PickLetter(this);
-    }
-
-  
+    }  
 }

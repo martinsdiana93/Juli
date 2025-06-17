@@ -5,6 +5,7 @@ public class BackToMenu : MonoBehaviour
 {
     public GameObject menuInicial;     // Referência ao menu inicial
     public List<GameObject> jogos;     // Lista de todos os jogos possíveis
+    public GameObject popUpFinal;
 
     public void VoltarMenu()
     {
@@ -13,6 +14,8 @@ public class BackToMenu : MonoBehaviour
         {
             jogo.SetActive(false);
         }
+
+        popUpFinal.SetActive(false);
 
         // Ativa o menu inicial
         menuInicial.SetActive(true);

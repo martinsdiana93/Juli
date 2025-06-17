@@ -10923,7 +10923,7 @@ MonoBehaviour:
   LetterOption: []
   FinalWord: 
   wordStep: 0
-  PopUpFinal: {fileID: 0}
+  PopUpFinal: {fileID: 1164605914}
   game_finished: 0
   end_delay: 0
 --- !u!224 &1037738692
@@ -13198,14 +13198,26 @@ PrefabInstance:
     - target: {fileID: 2710115650972455984, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1037738691}
+      objectReference: {fileID: 1975894322}
     - target: {fileID: 2710115650972455984, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RepetirNivel
+      value: RepetirNivelAleatorio
       objectReference: {fileID: 0}
     - target: {fileID: 2710115650972455984, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: WordGame, Assembly-CSharp
+      value: LevelManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263641096603440010, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3263641096603440010, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1468873741}
+    - target: {fileID: 3263641096603440010, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadScene
       objectReference: {fileID: 0}
     - target: {fileID: 3362917477397652808, guid: 45f8efcd21e518249979ad9ba8d92a2e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15473,6 +15485,7 @@ MonoBehaviour:
   - {fileID: 670490009}
   - {fileID: 1055835607}
   - {fileID: 344780390}
+  popUpFinal: {fileID: 1164605914}
 --- !u!1 &1355522334
 GameObject:
   m_ObjectHideFlags: 0
@@ -18824,6 +18837,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1975894321}
+        m_TargetAssemblyTypeName: WordGameDif, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

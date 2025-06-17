@@ -46,17 +46,39 @@ public class LevelManager : MonoBehaviour
         nivelAtual.gameObject.SetActive(true);
         nivelAtual.StartGame();
 
+        Debug.Log("Dificuldade atual: " + dificuldadeAtual + " | Nível: " + indiceAtual);
         botaoAvancar.SetActive(indiceAtual < lista.Count - 1); // Esconde se for o último
     }
 
     private List<WordGame> ObterListaAtual()
     {
-        return dificuldadeAtual switch
+        switch (dificuldadeAtual)
         {
-            Dificuldade.Facil => wordGameDif.easygames,
-            Dificuldade.Medio => wordGameDif.mediumgames,
-            Dificuldade.Dificil => wordGameDif.hardgames,
-            _ => new List<WordGame>()
-        };
+            case Dificuldade.Facil: return wordGameDif.easygames;
+            case Dificuldade.Medio: return wordGameDif.mediumgames;
+            case Dificuldade.Dificil: return wordGameDif.hardgames;
+            default: return new List<WordGame>();
+        }
+    }
+
+    public void RepetirNivelAleatorio()
+    {
+        // Obtém lista atual da dificuldade
+        List<WordGame> lista = ObterListaAtual();
+
+        // Desativa todos os jogos
+        foreach (WordGame jogo in lista)
+        {
+            jogo.gameObject.SetActive(false);
+        }
+
+        // Escolhe outro jogo aleatório
+        int novoIndice = Random.Range(0, lista.Count);
+        indiceAtual = novoIndice;
+
+        // Ativa e inicia o novo jogo
+        lista[indiceAtual].gameObject.SetActive(true);
+        lista[indiceAtual].StartGame();
+
     }
 }

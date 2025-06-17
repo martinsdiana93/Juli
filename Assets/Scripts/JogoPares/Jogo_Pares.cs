@@ -12,7 +12,9 @@ public class Jogo_Pares : MonoBehaviour
 
     public GameObject win_screen = null;
 
+    [SerializeField] private AudioSource correctSound;
     
+    [SerializeField] private AudioSource wrongSound;    
 
     public void PickPiece(Piece selected_piece)
     {
@@ -30,15 +32,17 @@ public class Jogo_Pares : MonoBehaviour
             if (myPiece.piece_name == selected_piece.piece_name)
             {
                 myPiece.gameObject.SetActive(false);
-                selected_piece.gameObject.SetActive(false);
+                selected_piece.gameObject.SetActive(false);                
                 myPiece = null;
                 update_pieces();
+                correctSound.Play(); 
             }
             else
             {
                 myPiece.piece_highlighted.SetActive(false);
                 selected_piece.piece_highlighted.SetActive(false);
                 myPiece = null;
+                wrongSound.Play(); 
             }
         }
     }

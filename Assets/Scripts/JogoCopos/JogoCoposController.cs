@@ -32,6 +32,9 @@ public class JogoCoposController : MonoBehaviour
     public GameObject popUpCerto;
     public FinalSceneManager sceneManager;
 
+    [SerializeField] private AudioSource correctSound;
+    [SerializeField] private AudioSource wrongSound; 
+
     public void IniciarNivel()
     {
         IniciarNivel(nivelActual);
@@ -155,12 +158,15 @@ public class JogoCoposController : MonoBehaviour
             revealOthers = true;
             revealedCup = escolhido;
             Contar_Pontos.IncrementRightAnswer();
+            correctSound.Play(); 
+
         } else
         {
             // Perdeste
             revealOthers = true;
             revealedCup = escolhido;
             Contar_Pontos.IncrementWrongAnswer();
+            wrongSound.Play(); 
         }
     }
 

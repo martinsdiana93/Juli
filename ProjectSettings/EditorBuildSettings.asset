@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SleepScene.unity
     guid: 694eef9c53658a848b0a15d5a24ec971
+  - enabled: 1
+    path: Assets/Scenes/JogoMat.unity
+    guid: 962c943a3875c5846bd20f4387cb8916
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

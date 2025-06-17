@@ -30,7 +30,7 @@ public class JogoCoposController : MonoBehaviour
 
     public GameObject popUpErrado;
     public GameObject popUpCerto;
-    public FinalSceneManager sceneManager;
+    public FinalSceneManagerJogoCopos sceneManager;
 
     [SerializeField] private AudioSource correctSound;
     [SerializeField] private AudioSource wrongSound; 

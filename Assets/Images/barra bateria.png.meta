@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      barra bateria_0: 3364197370209430659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

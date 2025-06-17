@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7dbb6befc4cdfb44e935195de8ba4c2f
+guid: 9f4538a3d6b79fb40ac891a5482c78e3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7419264182785793178
-    second: Bot3_mat_0
+      213: 1305395498779306133
+    second: Home_logica_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bot3_mat_0
+      name: Home_logica_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 652
-        height: 293
+        width: 301
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a9cd9bd177586f660800000000000000
-      internalID: 7419264182785793178
+      spriteID: 59862243a42bd1210800000000000000
+      internalID: 1305395498779306133
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Bot3_mat_0: 7419264182785793178
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

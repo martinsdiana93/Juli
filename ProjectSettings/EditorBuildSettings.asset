@@ -9,8 +9,26 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/JogoCopos_Scene.unity
+    path: Assets/Scenes/JogoCopos.unity
     guid: eee7df397f6249045a6dba3f1fafbf4a
+  - enabled: 1
+    path: Assets/Scenes/JogoABC.unity
+    guid: bd228d3ae21115e4d9d9de452622d6b3
+  - enabled: 1
+    path: Assets/Scenes/JogoPares.unity
+    guid: 286f8bf58d2a68c47a9f25aa8bad5d5e
+  - enabled: 1
+    path: Assets/Scenes/DrinkScene.unity
+    guid: f707f33c5ab0c5d4a853f7cfdd818919
+  - enabled: 1
+    path: Assets/Scenes/EatScene.unity
+    guid: f6bccf6843ce2424b9b011651a5fb27d
+  - enabled: 1
+    path: Assets/Scenes/ShowerScene.unity
+    guid: 614e6da1ef19caa4ea8944a3f05c93e9
+  - enabled: 1
+    path: Assets/Scenes/SleepScene.unity
+    guid: 694eef9c53658a848b0a15d5a24ec971
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

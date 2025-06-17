@@ -8,7 +8,8 @@ public class ActivityScreen : MonoBehaviour
     public string[] facts = new string[0];
 	public MainHUD.ActivityType at = MainHUD.ActivityType.None;
 
-	// Choice Based
+    // Choice Based
+    public bool automaticTransition = true;
 	public bool choices = false;
 	public GameObject choice_object = null;
 	public GameObject return_button = null;
@@ -72,7 +73,7 @@ public class ActivityScreen : MonoBehaviour
 					break;
 			}
 		} else {
-			choice_object.SetActive(false);
+			//choice_object.SetActive(false);
 			return_button.SetActive(true);
 		}
 
@@ -209,6 +210,9 @@ public class ActivityScreen : MonoBehaviour
                 mh.mc.sleep();
                 break;
 		}
-		mh.change_activity(MainHUD.ActivityType.None);
+        if (automaticTransition)
+        {
+            mh.change_activity(MainHUD.ActivityType.None);
+        }
 	}
 }

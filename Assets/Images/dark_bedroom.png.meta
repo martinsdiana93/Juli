@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 7be1a52dc7a69cf4489027ae9d04c655
+guid: 62e4477c641619647930d12ebca8afae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8197047826604361390
-    second: bedroom_0
+      213: -2037532893880291268
+    second: dark_bedroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bedroom_0
+      name: dark_bedroom_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ea604a78193c1c170800000000000000
-      internalID: 8197047826604361390
+      spriteID: c30771ad0aa39b3e0800000000000000
+      internalID: -2037532893880291268
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bedroom_0: 8197047826604361390
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

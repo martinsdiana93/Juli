@@ -13,6 +13,9 @@ public class WordGame : MonoBehaviour
     public bool game_finished = false;
     public float end_delay = 0f;
 
+    [SerializeField] private AudioSource correctSound;
+    [SerializeField] private AudioSource wrongSound; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void StartGame()
     {
@@ -30,7 +33,7 @@ public class WordGame : MonoBehaviour
 
         foreach (GameObject letter in SolutionWord)
         {
-            letter.SetActive(false);
+            letter.SetActive(false); 
         }
 
         foreach (LetterButton letter in LetterOption)
@@ -47,7 +50,12 @@ public class WordGame : MonoBehaviour
         {
             SolutionWord[wordStep].SetActive(true);
             ButtonChosen.gameObject.SetActive(false);
-            wordStep++;
+            wordStep++;            
+            correctSound.Play(); 
+        }
+        else
+        {
+           wrongSound.Play();
         }
 
         if(wordStep >=FinalWord.Length)
@@ -58,13 +66,5 @@ public class WordGame : MonoBehaviour
                 PopUpFinal.SetActive(true); // Mostra o popup final
             game_finished = true;
         }
-    }
-
-    public void RepetirNivel()
-    {
-        if (PopUpFinal != null)
-            PopUpFinal.SetActive(false); // Esconde o popup final, se estiver visível
-
-        StartGame(); // Recomeça o jogo com os mesmos dados
     }
 }

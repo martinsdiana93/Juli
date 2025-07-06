@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     public WordGameDif wordGameDif; // Referência ao script que tem as listas de jogos
 
     public GameObject botaoAvancar; // Botão "Avançar nível", que será desativado no fim
+    public GameObject popupFinal;
 
     public void AvancarNivel()
     {
@@ -30,8 +31,9 @@ public class LevelManager : MonoBehaviour
         botaoAvancar.GetComponent<Button>().interactable = (wordGameDif.currentDifficulty < 3); // Esconde o botão
     }
 
-    private void DesactivarJogos()
+    public void DesactivarJogos()
     {
+        popupFinal.SetActive(false);
         // Desativa todos os jogos
         foreach (WordGame jogo in wordGameDif.easygames)
             jogo.gameObject.SetActive(false);
@@ -39,6 +41,7 @@ public class LevelManager : MonoBehaviour
             jogo.gameObject.SetActive(false);
         foreach (WordGame jogo in wordGameDif.hardgames)
             jogo.gameObject.SetActive(false);
+        Debug.Log("Jogos Desactivados!");
     }
 
     public void RepetirNivelAleatorio()

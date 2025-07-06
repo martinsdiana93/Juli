@@ -7,6 +7,7 @@ public class MudarNivel : MonoBehaviour
     public GameObject nivelFacil;
     public GameObject nivelMedio;
     public GameObject nivelDificil;
+    public GameObject finalPopup;
     
     public Button botaoProximoNivel;
     private int nivelAtual = 0;
@@ -41,6 +42,7 @@ public class MudarNivel : MonoBehaviour
 
     public void DesativarTodosOsNiveis()
     {
+        finalPopup.SetActive(false);
         nivelFacil.SetActive(false);
         nivelMedio.SetActive(false);
         nivelDificil.SetActive(false);

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5709688035680496474}
   - component: {fileID: 7739062732129933996}
   m_Layer: 0
-  m_Name: JOGO_PARES
+  m_Name: Consola
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1675278280102843048, guid: 029591cb7aa0b134796e97d58b16c54d, type: 3}
+  m_Sprite: {fileID: -3549409206790959571, guid: 6706901942018d64d87a26b467461842, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

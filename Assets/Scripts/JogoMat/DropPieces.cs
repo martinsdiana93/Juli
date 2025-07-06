@@ -7,15 +7,25 @@ public class DropPieces : MonoBehaviour, IDropHandler
 {
 
     public GameObject FinalScene;
+    public JogoMatController mat_controller;
     public int numeroTotalDePecas = 3;
+    public Image image = null;
 
-    private static int contadorPecasRestantes;
+    public static int contadorPecasRestantes;
 
     void Start()
     {
         contadorPecasRestantes = numeroTotalDePecas;
         if (FinalScene != null)
             FinalScene.SetActive(false);
+        image = GetComponent<Image>();
+    }
+
+    public void toggle_alpha(bool visible){
+        if(image == null){return;}
+        var currentColor = image.color;
+        currentColor.a = visible ? 0 : 1;
+        image.color = currentColor;
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -25,18 +35,18 @@ public class DropPieces : MonoBehaviour, IDropHandler
         if (collisionElement == null) return;
         if (collisionElement.targetImage.name == this.gameObject.name)
         {
-            var currentColor = this.GetComponent<Image>().color;
-            currentColor.a = 1;
-            GetComponent<Image>().color = currentColor;
-            Destroy(collisionElement.gameObject, 0);
-            //correctSound.Play();
+            collisionElement.GetComponent<Puzzle>()._canvasGroup.blocksRaycasts = true;
+            collisionElement.gameObject.SetActive(false);
+            toggle_alpha(false);
+            //Destroy(collisionElement.gameObject, 0);
+            mat_controller.play_sound("correct");
             contadorPecasRestantes--;
             VerificarFimDoJogo();
         }
         else
         {
             collisionElement.ResetImage();
-            //wrongSound.Play();
+            mat_controller.play_sound("wrong");
 
         }
     }
@@ -45,7 +55,9 @@ public class DropPieces : MonoBehaviour, IDropHandler
     {
         if (contadorPecasRestantes <= 0 && FinalScene != null)
         {
-            FinalScene.SetActive(true);
+            //FinalScene.SetActive(true);
+            contadorPecasRestantes = numeroTotalDePecas;
+            mat_controller.win_game();
         }
     }
 }

@@ -9,6 +9,13 @@ public class MainHUD : MonoBehaviour
     public MainCharacter mc = null;
     public int game_cost_amount = 20;
 
+    // Music
+    public AudioClip music_main_loop;
+    public AudioClip music_game_loop;
+    public bool music_enabled = true;
+    public AudioSource main_music;
+    public List<ToggleMusicButton> toggle_music_buttons = new List<ToggleMusicButton>();
+
     // Activity Screens
     public ActivityScreen screen_shower = null;
     public GameObject screen_showerObject = null;
@@ -25,6 +32,9 @@ public class MainHUD : MonoBehaviour
     public Image thirst = null;
     public Image energy = null;
     public Image happiness_bar = null;
+    public Color happiness_good;
+    public Color happiness_average;
+    public Color happiness_bad;
 
     // Timeouts
     public float timeout_time = 600.0f;
@@ -54,6 +64,14 @@ public class MainHUD : MonoBehaviour
         }
     }
 
+    public void update_music(){
+        if(music_enabled){
+            main_music.Play();
+        } else {
+            main_music.Stop();
+        }
+    }
+
     public void deplete_needs(){
         switch(Random.Range(0,4)){
             case 0:
@@ -80,6 +98,12 @@ public class MainHUD : MonoBehaviour
                 screen_eatObject.SetActive(false);
                 screen_drinkObject.SetActive(false);
                 screen_sleepObject.SetActive(false);
+                mc.change_character_position("neutral");
+                mc.change_character_sprite("neutral");
+                if(main_music.clip != music_main_loop){
+                    main_music.clip = music_main_loop;
+                    update_music();
+                }
                 break;
             case ActivityType.Shower:
                 if(hygiene_timeout > 0.0f) {return;}
@@ -89,6 +113,8 @@ public class MainHUD : MonoBehaviour
                 screen_eatObject.SetActive(false);
                 screen_drinkObject.SetActive(false);
                 screen_sleepObject.SetActive(false);
+                mc.change_character_position("shower");
+                mc.change_character_sprite("shower");
                 break;
             case ActivityType.Eat:
                 if(food_timeout > 0.0f) {return;}
@@ -98,6 +124,8 @@ public class MainHUD : MonoBehaviour
                 screen_eat.pick_clock_options();
                 screen_drinkObject.SetActive(false);
                 screen_sleepObject.SetActive(false);
+                mc.change_character_position("eat");
+                mc.change_character_sprite("neutral");
                 break;
             case ActivityType.Drink:
                 if(thirst_timeout > 0.0f) {return;}
@@ -107,6 +135,8 @@ public class MainHUD : MonoBehaviour
                 screen_drinkObject.SetActive(true);
                 screen_drink.pick_fact();
                 screen_sleepObject.SetActive(false);
+                mc.change_character_position("drink");
+                mc.change_character_sprite("neutral");
                 break;
             case ActivityType.Sleep:
                 if(energy_timeout > 0.0f) {return;}
@@ -116,6 +146,8 @@ public class MainHUD : MonoBehaviour
                 screen_drinkObject.SetActive(false);
                 screen_sleepObject.SetActive(true);
                 screen_sleep.pick_fact();
+                mc.change_character_position("sleep");
+                mc.change_character_sprite("sleep_on");
                 break;
             case ActivityType.Game:
                 buttons.SetActive(false);
@@ -123,6 +155,10 @@ public class MainHUD : MonoBehaviour
                 screen_eatObject.SetActive(false);
                 screen_drinkObject.SetActive(false);
                 screen_sleepObject.SetActive(false);
+                if(main_music.clip != music_game_loop){
+                    main_music.clip = music_game_loop;
+                    update_music();
+                }
                 break;
         }
         update_needs();
@@ -185,13 +221,13 @@ public class MainHUD : MonoBehaviour
 
         if (mc.happiness <= 60){
             if (mc.happiness <= 30){
-                happiness_bar.color = Color.red;
+                happiness_bar.color = happiness_bad;
             } else {
-                happiness_bar.color = Color.yellow;
+                happiness_bar.color = happiness_average;
             }
         }
         else {
-            happiness_bar.color = Color.green;
+            happiness_bar.color = happiness_good;
         }
     }
 

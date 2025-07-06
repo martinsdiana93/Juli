@@ -9,7 +9,6 @@ public class ActivityScreen : MonoBehaviour
 	public MainHUD.ActivityType at = MainHUD.ActivityType.None;
 
     // Choice Based
-    public bool automaticTransition = true;
 	public bool choices = false;
 	public GameObject choice_object = null;
 	public GameObject return_button = null;
@@ -18,6 +17,8 @@ public class ActivityScreen : MonoBehaviour
 	public Image choice_2 = null;
 	public Sprite[] good_choices = new Sprite[0];
 	public Sprite[] bad_choices = new Sprite[0];
+    public GameObject good_choice_monologue = null;
+    public GameObject bad_choice_monologue = null;
 
 	// Clock Based
 	public string current_meal = "";
@@ -57,6 +58,8 @@ public class ActivityScreen : MonoBehaviour
     }
     public void pick_fact(Sprite[] goodChoices, Sprite[] badChoices)
     {
+        if (good_choice_monologue != null) {good_choice_monologue.SetActive(false);}
+        if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(false);}
 		if (choices && (goodChoices.Length > 0 && badChoices.Length > 0)) {
 			choice_object.SetActive(true);
 			return_button.SetActive(false);
@@ -164,7 +167,7 @@ public class ActivityScreen : MonoBehaviour
                     case "brunch":
                         pick_fact(clockGoodChoices3, clockBadChoices3);
                         break;
-                    case "diner":
+                    case "dinner":
                         pick_fact(clockGoodChoices4, clockBadChoices4);
                         break;
                 }
@@ -192,6 +195,7 @@ public class ActivityScreen : MonoBehaviour
 	}
 
 	public void click_option(int op){
+		choice_object.SetActive(false);
 		switch(at){
 			case MainHUD.ActivityType.Shower:
                 mh.hygiene_timeout += mh.timeout_time;
@@ -210,9 +214,14 @@ public class ActivityScreen : MonoBehaviour
                 mh.mc.sleep();
                 break;
 		}
-        if (automaticTransition)
-        {
-            mh.change_activity(MainHUD.ActivityType.None);
+
+        if(op == 1){
+            if (good_choice_monologue != null) {good_choice_monologue.SetActive(true); }
+            if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(false);}
+        } else {
+            if (good_choice_monologue != null) {good_choice_monologue.SetActive(false);}
+            if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(true);}
         }
+		return_button.SetActive(true);
 	}
 }

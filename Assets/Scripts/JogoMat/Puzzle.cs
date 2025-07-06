@@ -6,18 +6,19 @@ public class Puzzle: MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHan
 {
     public Image targetImage;
 
-    private Vector2 _startPosition;
+    public Vector2 _startPosition = Vector2.zero;
     private RectTransform _rectTransform;
     private Canvas _myCanvas;
-    private CanvasGroup _canvasGroup;
-
+    public CanvasGroup _canvasGroup;
+    public bool started = false;
 
     void Start()
     {
         _rectTransform = GetComponent<RectTransform>();
-        _startPosition = _rectTransform.transform.position;
+        _startPosition = _rectTransform.transform.localPosition;
         _myCanvas = GetComponentInParent<Canvas>();
         _canvasGroup = GetComponent<CanvasGroup>();
+        started = true;
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -37,6 +38,6 @@ public class Puzzle: MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHan
 
     public void ResetImage()
     {
-        gameObject.GetComponent<RectTransform>().position = _startPosition;
+        gameObject.GetComponent<RectTransform>().localPosition = _startPosition;
     }
 }

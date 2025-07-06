@@ -43,9 +43,9 @@ public class WordGame : MonoBehaviour
         end_delay = 0f;
 
         if (PopUpFinal == null)
-{
-        Debug.LogWarning("PopUpFinal não foi atribuído!");
-}
+        {
+            Debug.LogWarning("PopUpFinal não foi atribuído!");
+        }
 
         if (PopUpFinal != null && PopUpFinal.activeSelf)
             PopUpFinal.SetActive(false); // Garante que está escondido no início

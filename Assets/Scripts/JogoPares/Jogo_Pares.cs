@@ -18,8 +18,6 @@ public class Jogo_Pares : MonoBehaviour
 
     public void PickPiece(Piece selected_piece)
     {
-        if (selected_piece.piece_disabled.activeSelf == true) { return; }
-        if (myPiece == selected_piece) { return; }
 
         if (myPiece == null)
         {
@@ -29,7 +27,7 @@ public class Jogo_Pares : MonoBehaviour
 
         else
         {
-            if (myPiece.piece_name == selected_piece.piece_name)
+            if (myPiece.piece_name == selected_piece.piece_name && myPiece != selected_piece && !selected_piece.piece_disabled.activeSelf)
             {
                 myPiece.gameObject.SetActive(false);
                 selected_piece.gameObject.SetActive(false);                

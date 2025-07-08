@@ -39,6 +39,7 @@ public class MainCharacter : MonoBehaviour
     public void eat(bool healthy){
         food = Mathf.Clamp(food + (healthy? 50 : 20), 0, 100);
         change_character_sprite(healthy ? "happy" : "sad");
+        change_character_position("eat");
     }
 
     public void drink(bool healthy){

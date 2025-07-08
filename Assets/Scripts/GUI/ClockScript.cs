@@ -9,6 +9,9 @@ public class ActivityScreen : MonoBehaviour
     public string[] facts = new string[0];
 	public MainHUD.ActivityType at = MainHUD.ActivityType.None;
 
+    public AudioSource somCorreto;
+    public AudioSource somErrado;
+
     // Choice Based
 	public bool choices = false;
 	public GameObject choice_object = null;
@@ -44,9 +47,8 @@ public class ActivityScreen : MonoBehaviour
     public Sprite clockDisplay4 = null;
     public Sprite[] clockGoodChoices4 = new Sprite[0];
     public Sprite[] clockBadChoices4 = new Sprite[0];
-	public GameObject wrongChoice = null;
 
-    private MealChoiceButton[] mealButtons;
+    public MealChoiceButton[] mealButtons;
 
     // Clock Defines
     Vector3 clockStartPos = new Vector3(-590, 139, 0);
@@ -56,13 +58,27 @@ public class ActivityScreen : MonoBehaviour
     Vector3 clockStartScale = new Vector3(0.2845881f, 0.2845881f, 0.2845881f);
     Vector3 clockEndScale = new Vector3(0.88f, 0.88f, 0.88f);
 
+    // Falas da casa-de-banho
+    public GameObject balaoLavarDentes;
+    public GameObject balaoTomarBanho;
+
+    // Textos dentro dos balões
+    public TMPro.TextMeshProUGUI textoBalaoLavarDentes;
+    public TMPro.TextMeshProUGUI textoBalaoTomarBanho;
+
+    // Factos possíveis
+    public string[] factosLavarDentes;
+    public string[] factosTomarBanho;
+
     void Start()
     {
-        mealButtons = Object.FindObjectsByType<MealChoiceButton>(FindObjectsSortMode.None);
+        if (balaoLavarDentes != null) balaoLavarDentes.SetActive(false);
+        if (balaoTomarBanho != null) balaoTomarBanho.SetActive(false);
+
         foreach (MealChoiceButton btn in mealButtons)
-    {
-        btn.Init(this);
-    }
+        {
+            btn.Init(this);
+        }
     }
 
     public void pick_fact()
@@ -138,9 +154,7 @@ public class ActivityScreen : MonoBehaviour
         {
             btn.Init(this); // Reset ao estado normal e passa referência
             btn.gameObject.SetActive(true);
-        }
-
-        wrongChoice.SetActive(false);
+        }       
 
         //clockChoice1.SetActive(false);
         //clockChoice2.SetActive(false);
@@ -210,8 +224,11 @@ public class ActivityScreen : MonoBehaviour
             clockAnimEnd = true;
 
             foreach (MealChoiceButton btn in mealButtons)
-            btn.button.interactable = false; // desativa todos depois de acertar
-            wrongChoice.SetActive(false);
+            {
+                btn.button.interactable = false; // desativa todos depois de acertar
+                btn.gameObject.SetActive(false); // <-- ESCONDE cada botão
+                if (somCorreto != null) somCorreto.Play();
+            }
 
             //clockChoice1.SetActive(false);
             //clockChoice2.SetActive(false);
@@ -222,7 +239,7 @@ public class ActivityScreen : MonoBehaviour
 		{
             // Só desativar o botão errado
             button.SetGreyedOut();
-            wrongChoice.SetActive(true);            
+            if (somErrado != null) somErrado.Play();
         }
 	}
 
@@ -259,4 +276,32 @@ public class ActivityScreen : MonoBehaviour
         }
 		return_button.SetActive(true);
 	}
+
+    public void MostrarBalaoLavarDentes()
+    {
+        if (balaoTomarBanho != null) balaoTomarBanho.SetActive(false);
+        if (balaoLavarDentes != null)
+        {
+            balaoLavarDentes.SetActive(true);
+
+            if (textoBalaoLavarDentes != null && factosLavarDentes.Length > 0)
+            {
+                textoBalaoLavarDentes.text = factosLavarDentes[Random.Range(0, factosLavarDentes.Length)];
+            }
+        }
+    }
+
+    public void MostrarBalaoTomarBanho()
+    {
+        if (balaoLavarDentes != null) balaoLavarDentes.SetActive(false);
+        if (balaoTomarBanho != null)
+        {
+            balaoTomarBanho.SetActive(true);
+
+            if (textoBalaoTomarBanho != null && factosTomarBanho.Length > 0)
+            {
+                textoBalaoTomarBanho.text = factosTomarBanho[Random.Range(0, factosTomarBanho.Length)];
+            }
+        }
+    }
 }

@@ -153,7 +153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5571321012705988056
 RectTransform:
   m_ObjectHideFlags: 0
@@ -576,6 +576,8 @@ MonoBehaviour:
   facts:
   - 
   at: 0
+  somCorreto: {fileID: 0}
+  somErrado: {fileID: 0}
   choices: 0
   choice_object: {fileID: 7143787418642557607}
   return_button: {fileID: 8205171747221085853}
@@ -608,7 +610,9 @@ MonoBehaviour:
   clockDisplay4: {fileID: 0}
   clockGoodChoices4: []
   clockBadChoices4: []
-  wrongChoice: {fileID: 0}
+  mealButtons: []
+  balaoLavarDentes: {fileID: 0}
+  balaoTomarBanho: {fileID: 0}
 --- !u!1 &7143787418642557607
 GameObject:
   m_ObjectHideFlags: 0

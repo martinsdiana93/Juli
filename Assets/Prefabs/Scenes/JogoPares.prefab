@@ -651,6 +651,7 @@ MonoBehaviour:
   nivelFacil: {fileID: 517901000414029833}
   nivelMedio: {fileID: 6268632022961578052}
   nivelDificil: {fileID: 4111003749540810526}
+  finalPopup: {fileID: 0}
   botaoProximoNivel: {fileID: 1737630937164530036}
 --- !u!1 &3602688165848786804
 GameObject:
@@ -1375,7 +1376,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3549409206790959571, guid: 6706901942018d64d87a26b467461842, type: 3}
+  m_Sprite: {fileID: -1390480469934613251, guid: 4706d1f7aaf0a124994ab5701e92dccb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

@@ -12347,6 +12347,7 @@ MonoBehaviour:
   dificuldadeAtual: 0
   wordGameDif: {fileID: 6917167557248962791}
   botaoAvancar: {fileID: 2181834464349375680}
+  popupFinal: {fileID: 0}
 --- !u!1 &6374622947078690608
 GameObject:
   m_ObjectHideFlags: 0
@@ -16517,7 +16518,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -3549409206790959571, guid: 6706901942018d64d87a26b467461842, type: 3}
+  m_Sprite: {fileID: -1390480469934613251, guid: 4706d1f7aaf0a124994ab5701e92dccb, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

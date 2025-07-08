@@ -67,7 +67,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1252239128373169275, guid: f834a066b2c70a84e8a92708b701b912, type: 3}
+  m_Sprite: {fileID: -4306579375171245494, guid: 46a9486a3a9b4824bacf496e0595c738, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -146,6 +146,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main_hud: {fileID: 0}
-  music_on: {fileID: 1252239128373169275, guid: f834a066b2c70a84e8a92708b701b912, type: 3}
-  music_off: {fileID: 2097111869542782712, guid: cd4e06bef23a4d949958d8a61496b2ac, type: 3}
+  music_on: {fileID: -4306579375171245494, guid: 46a9486a3a9b4824bacf496e0595c738, type: 3}
+  music_off: {fileID: 3234296489749072208, guid: 8191b88e418714c43937bef2572ec4cb, type: 3}
   button_image: {fileID: 7015335536106307152}

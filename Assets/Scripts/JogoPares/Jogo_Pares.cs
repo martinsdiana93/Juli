@@ -18,6 +18,12 @@ public class Jogo_Pares : MonoBehaviour
 
     public void PickPiece(Piece selected_piece)
     {
+        // Impede que peças com overlap sejam selecionadas
+        if (selected_piece.has_overlap())
+        {
+            Debug.Log("Peça bloqueada, não pode ser selecionada.");
+            return;
+        }
 
         if (myPiece == null)
         {

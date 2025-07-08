@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 684fb5adcfb68a445bd30f0cb19888a1
+guid: e9fcb134197e0fa4297fa3da7fb5b1e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6300883382878285206
-    second: AdobeStock_1088404095_0
+      213: -2123582635024776350
+    second: Lanche_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: AdobeStock_1088404095_0
+      name: Lanche_0
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 186
-        width: 1223
-        height: 3684
+        x: 0
+        y: 0
+        width: 649
+        height: 301
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a62d06062f3ce88a0800000000000000
-      internalID: -6300883382878285206
+      spriteID: 263092c38d48782e0800000000000000
+      internalID: -2123582635024776350
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      AdobeStock_1088404095_0: -6300883382878285206
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

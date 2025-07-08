@@ -132,6 +132,7 @@ MonoBehaviour:
   piece_highlighted: {fileID: 2210886506962026307}
   piece_disabled: {fileID: 9070497714420310573}
   jogo_pares: {fileID: 0}
+  overlaps: []
 --- !u!114 &5396407602239467625
 MonoBehaviour:
   m_ObjectHideFlags: 0

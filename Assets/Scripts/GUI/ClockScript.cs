@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ActivityScreen : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class ActivityScreen : MonoBehaviour
 	public Sprite[] bad_choices = new Sprite[0];
     public GameObject good_choice_monologue = null;
     public GameObject bad_choice_monologue = null;
+    public GameObject info_panel = null;
 
 	// Clock Based
 	public string current_meal = "";
@@ -44,13 +46,24 @@ public class ActivityScreen : MonoBehaviour
     public Sprite[] clockBadChoices4 = new Sprite[0];
 	public GameObject wrongChoice = null;
 
+    private MealChoiceButton[] mealButtons;
+
     // Clock Defines
     Vector3 clockStartPos = new Vector3(-590, 139, 0);
-    Vector3 clockEndPos = new Vector3(-496, -30, 0);
+    Vector3 clockEndPos = new Vector3(-550, -30, 0);
     Vector3 clockStartRot = new Vector3(0, -65.355f, 0);
     Vector3 clockEndRot = new Vector3(0, 0, 0);
     Vector3 clockStartScale = new Vector3(0.2845881f, 0.2845881f, 0.2845881f);
-    Vector3 clockEndScale = new Vector3(0.8915734f, 0.8915734f, 0.8915734f);
+    Vector3 clockEndScale = new Vector3(0.88f, 0.88f, 0.88f);
+
+    void Start()
+    {
+        mealButtons = Object.FindObjectsByType<MealChoiceButton>(FindObjectsSortMode.None);
+        foreach (MealChoiceButton btn in mealButtons)
+    {
+        btn.Init(this);
+    }
+    }
 
     public void pick_fact()
 	{
@@ -58,6 +71,8 @@ public class ActivityScreen : MonoBehaviour
     }
     public void pick_fact(Sprite[] goodChoices, Sprite[] badChoices)
     {
+        if (info_panel != null) { info_panel.SetActive(true); }
+
         if (good_choice_monologue != null) {good_choice_monologue.SetActive(false);}
         if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(false);}
 		if (choices && (goodChoices.Length > 0 && badChoices.Length > 0)) {
@@ -96,6 +111,7 @@ public class ActivityScreen : MonoBehaviour
         clockDisplay.transform.localPosition = clockStartPos;
         clockDisplay.transform.localEulerAngles = clockStartRot;
         clockDisplay.transform.localScale = clockStartScale;
+        
         // Pick Random Time
         switch (Random.Range(0, 4))
 		{
@@ -116,10 +132,20 @@ public class ActivityScreen : MonoBehaviour
                 clockDisplay.GetComponent<Image>().sprite = clockDisplay4;
                 break;
         }
-        clockChoice1.SetActive(false);
-        clockChoice2.SetActive(false);
-        clockChoice3.SetActive(false);
-        clockChoice4.SetActive(false);
+        
+        // Reiniciar os botões
+        foreach (MealChoiceButton btn in mealButtons)
+        {
+            btn.Init(this); // Reset ao estado normal e passa referência
+            btn.gameObject.SetActive(true);
+        }
+
+        wrongChoice.SetActive(false);
+
+        //clockChoice1.SetActive(false);
+        //clockChoice2.SetActive(false);
+        //clockChoice3.SetActive(false);
+        //clockChoice4.SetActive(false);
     }
 
     public void Update()
@@ -176,21 +202,27 @@ public class ActivityScreen : MonoBehaviour
 
     }
 
-	public void pick_meal_option(string meal_option)
+	public void pick_meal_option(string meal_option, MealChoiceButton button)
 	{
 		if (meal_option == current_meal)
         {
             clockTick = 0.0f;
             clockAnimEnd = true;
-            clockChoice1.SetActive(false);
-            clockChoice2.SetActive(false);
-            clockChoice3.SetActive(false);
-            clockChoice4.SetActive(false);
+
+            foreach (MealChoiceButton btn in mealButtons)
+            btn.button.interactable = false; // desativa todos depois de acertar
             wrongChoice.SetActive(false);
+
+            //clockChoice1.SetActive(false);
+            //clockChoice2.SetActive(false);
+            //clockChoice3.SetActive(false);
+            //clockChoice4.SetActive(false);            
 		}
 		else
 		{
-            wrongChoice.SetActive(true);
+            // Só desativar o botão errado
+            button.SetGreyedOut();
+            wrongChoice.SetActive(true);            
         }
 	}
 
@@ -215,12 +247,15 @@ public class ActivityScreen : MonoBehaviour
                 break;
 		}
 
-        if(op == 1){
-            if (good_choice_monologue != null) {good_choice_monologue.SetActive(true); }
-            if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(false);}
-        } else {
-            if (good_choice_monologue != null) {good_choice_monologue.SetActive(false);}
-            if (bad_choice_monologue != null) {bad_choice_monologue.SetActive(true);}
+        if (op == good_choice) {
+            info_panel.SetActive(false);
+            if (good_choice_monologue != null) { good_choice_monologue.SetActive(true); }
+            if (bad_choice_monologue != null) { bad_choice_monologue.SetActive(false); }
+        }
+        else {
+            info_panel.SetActive(false);
+            if (good_choice_monologue != null) { good_choice_monologue.SetActive(false); }
+            if (bad_choice_monologue != null) { bad_choice_monologue.SetActive(true); }
         }
 		return_button.SetActive(true);
 	}

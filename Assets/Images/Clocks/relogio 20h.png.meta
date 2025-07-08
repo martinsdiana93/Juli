@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: 32594fb3b18315e4f8d69b3cfd62b0e9
+guid: 4ffa47fb4f7acf34eb4c75a4830a19c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7700285505550598607
-    second: "Pequeno_almo\xE7o_0"
+      213: -1257597176285216363
+    second: relogio 20h_0
+  - first:
+      213: 6020691360299823856
+    second: relogio 20h_1
+  - first:
+      213: -1715901491024058621
+    second: relogio 20h_2
+  - first:
+      213: 7472569974067178878
+    second: relogio 20h_3
+  - first:
+      213: -6715291316653079666
+    second: relogio 20h_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Pequeno_almo\xE7o_0"
+      name: relogio 20h_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 649
-        height: 301
+        x: 2
+        y: 3
+        width: 995
+        height: 995
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +140,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc1ce639ed8ecda60800000000000000
-      internalID: 7700285505550598607
+      spriteID: 5914cfcf70e1c8ee0800000000000000
+      internalID: -1257597176285216363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio 20h_1
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 811
+        width: 154
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f23fe8a4eacd8350800000000000000
+      internalID: 6020691360299823856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio 20h_2
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 483
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307a2f56fa4ef28e0800000000000000
+      internalID: -1715901491024058621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio 20h_3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 489
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d268fccc6e3b760800000000000000
+      internalID: 7472569974067178878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: relogio 20h_4
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 473
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e83c0ab602e7ec2a0800000000000000
+      internalID: -6715291316653079666
       vertices: []
       indices: 
       edges: []
@@ -148,7 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Pequeno_almo\xE7o_0": 7700285505550598607
+      relogio 20h_0: -1257597176285216363
+      relogio 20h_1: 6020691360299823856
+      relogio 20h_2: -1715901491024058621
+      relogio 20h_3: 7472569974067178878
+      relogio 20h_4: -6715291316653079666
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 32594fb3b18315e4f8d69b3cfd62b0e9
+guid: 86d92dd19e9c7634b95d246598674c25
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7700285505550598607
-    second: "Pequeno_almo\xE7o_0"
+      213: -5038635136620005028
+    second: "PAlmo\xE7o_Op2_0"
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Pequeno_almo\xE7o_0"
+      name: "PAlmo\xE7o_Op2_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 649
-        height: 301
+        width: 600
+        height: 599
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc1ce639ed8ecda60800000000000000
-      internalID: 7700285505550598607
+      spriteID: c5976f00a0c231ab0800000000000000
+      internalID: -5038635136620005028
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Pequeno_almo\xE7o_0": 7700285505550598607
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

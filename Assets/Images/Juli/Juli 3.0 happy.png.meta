@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: 32594fb3b18315e4f8d69b3cfd62b0e9
+guid: a0c2b2fdadda7304fa668f49f0a5ec3e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7700285505550598607
-    second: "Pequeno_almo\xE7o_0"
+      213: 2227465408011463463
+    second: Juli 3.0 happy_0
+  - first:
+      213: -279259356421398826
+    second: Juli 3.0 happy_1
+  - first:
+      213: -2063511702234543728
+    second: Juli 3.0 happy_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Pequeno_almo\xE7o_0"
+      name: Juli 3.0 happy_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 649
-        height: 301
+        x: 80
+        y: 77
+        width: 836
+        height: 1390
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc1ce639ed8ecda60800000000000000
-      internalID: 7700285505550598607
+      spriteID: 72b6ef9acfb89ee10800000000000000
+      internalID: 2227465408011463463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Juli 3.0 happy_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 1455
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de5c4c481fdf1cf0800000000000000
+      internalID: -279259356421398826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Juli 3.0 happy_2
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 1453
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099c27e2a0fec53e0800000000000000
+      internalID: -2063511702234543728
       vertices: []
       indices: 
       edges: []
@@ -147,8 +197,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      "Pequeno_almo\xE7o_0": 7700285505550598607
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

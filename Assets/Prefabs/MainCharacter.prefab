@@ -49,6 +49,18 @@ MonoBehaviour:
   food: 100
   thirst: 100
   energy: 100
+  char_image: {fileID: 0}
+  neutral_sprite: {fileID: 0}
+  shower_sprite: {fileID: 0}
+  sleeping_on_sprite: {fileID: 0}
+  sleeping_off_sprite: {fileID: 0}
+  happy_sprite: {fileID: 0}
+  sad_sprite: {fileID: 0}
+  neutral_position: {x: 0, y: 0}
+  eating_position: {x: 0, y: 0}
+  drinking_position: {x: 0, y: 0}
+  shower_position: {x: 0, y: 0}
+  sleeping_position: {x: 0, y: 0}
 --- !u!1 &4203984880836028912
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,15 +88,15 @@ RectTransform:
   m_GameObject: {fileID: 4203984880836028912}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3690448, y: 0.3690448, z: 0.3690448}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8842708563726206904}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 398, y: 224}
-  m_SizeDelta: {x: 318, y: 549}
+  m_AnchoredPosition: {x: 398, y: 234}
+  m_SizeDelta: {x: 1024, y: 1536}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2662665174109000985
 CanvasRenderer:
@@ -114,7 +126,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -322668531702085188, guid: d0bc83cc58c0c4e43af57688ae463768, type: 3}
+  m_Sprite: {fileID: -6353223532726624795, guid: f64e838e84a505b40bdf2108852ae06b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

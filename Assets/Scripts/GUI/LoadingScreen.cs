@@ -8,6 +8,9 @@ public class LoadingScreen : MonoBehaviour
     public int time_loading = 0;
     public float fill_time = 5f;
 
+    public GameObject play_game = null;
+    public GameObject LoadingScene = null;
+
     // Update is called once per frame
     void Update()
     {
@@ -25,7 +28,13 @@ public class LoadingScreen : MonoBehaviour
         rt.sizeDelta = new Vector2((time_loading+1) * 50, rt.sizeDelta.y);
 
         if (time_loading >= 10){
-            gameObject.SetActive(false);
+            progress_bar.gameObject.SetActive(false); // Esconde a barra
+            play_game.SetActive(true);                // Mostra o botão
         }
+    }
+
+    public void CloseLoadingScreen()
+    {
+        LoadingScene.SetActive(false);
     }
 }
